@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Envelope + Letter (Open/Close on Click)</title>
     <link rel="stylesheet" href="./style.css">
@@ -20,7 +19,7 @@
                         </p>
                         <div class="response-buttons">
                             <button onclick="handleResponse('yes')">Yes</button>
-                            <button onclick="handleResponse('no')">No</button>
+                            <button onclick="handleResponse('yes')">Yes</button>
                         </div>
                     </div>
                 </div>
@@ -36,12 +35,9 @@
 
         function handleResponse(response) {
             if (response === 'yes') {
-                alert('You said Yes!');
-            } else {
-                alert('You said No!');
+                alert('I knew you would say YES!');
             }
         }
     </script>
 </body>
-</html>
 </html>
