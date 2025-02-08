@@ -18,6 +18,10 @@
                             Will you be my Valentines?<br><br>
                             The love of your life, Blessings
                         </p>
+                        <div class="response-buttons">
+                            <button onclick="handleResponse('yes')">Yes</button>
+                            <button onclick="handleResponse('no')">No</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -29,6 +33,15 @@
         envelope.addEventListener('click', () => {
             envelope.classList.toggle('flap');
         });
+
+        function handleResponse(response) {
+            if (response === 'yes') {
+                alert('You said Yes!');
+            } else {
+                alert('You said No!');
+            }
+        }
     </script>
 </body>
+</html>
 </html>
