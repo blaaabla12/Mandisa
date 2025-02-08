@@ -28,6 +28,10 @@
             <div class="heart"></div>
         </div>
     </div>
+    <video id="responseVideo" width="320" height="240" controls style="display:none;">
+        <source src="comp.MOV" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
     <script>
         const envelope = document.querySelector('.envelope-wrapper');
         envelope.addEventListener('click', () => {
@@ -37,6 +41,9 @@
         function handleResponse(response) {
             if (response === 'yes') {
                 alert('I knew you would say yes!');
+                const video = document.getElementById('responseVideo');
+                video.style.display = 'block';
+                video.play();
             }
         }
     </script>
